@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
+    <link rel="stylesheet" href="assets/css/modals.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+    <title>Home Page</title>
+</head>
+<body class="">
+  <header class="pcHeader">
+    <a href="/index.html" class="logo"><img src="assets/images/icons/ooLogo.png" alt="OO"></a>
+    <ul>
+        <li><a href="/index.html"><img src="assets/images/icons/Home.png" alt=""></a> </li>
+        <li><a href="#"><img src="assets/images/icons/video.png" alt=""></a> </li>
+        <li><a href="/weather.html"><img src="assets/images/icons/cloud.png" alt=""></a> </li>
+        <li><a href="/profile.html"><img src="assets/images/icons/hamBurgerSelected.png" alt="options"></a> </li>
+
+        
+    </ul>
+  </header> 
+  <header class="mobileHeader">
+    <a href="#" class="logo"><img src="assets/images/icons/ooLogo.png" alt="OO"></a>
+    <ul>
+        <li><img src="assets/images/icons/searchWithBg.png" alt="search"></li>
+       
+        <li><a href="#"><img src="assets/images/icons/plusWithBg.png" alt="add"></a> </li>
+
+        
+    </ul>
+  </header> 
+
+  <nav class="mobileNav">
+    <ul>
+        <li><a href="#"><img class="bell"  src="assets/images/icons/notificationIcon.png" alt="bell"></a></li>
+        <li><a href="#"><img class="movieIcon" src="assets/images/icons/video.png" alt="video"></a></li>
+        <li id="homeMobile"><a href="/index.html"><img src="assets/images/icons/Home.png" alt=""></a></li>
+        <li><a href="/weather.html"><img class="cloudIcon" src="assets/images/icons/cloud.png" alt="cloud"></a></li>
+        <li><a href="/profile.html"><img class="cloudIcon" src="assets/images/icons/hamBurgerSelected.png" alt="options"></a></li>
+    
+    </ul>
+
+  </nav>
+
+  <section class="mainBody">
+<div class="profileHeader">
+  <div class="profileHeadTop">
+    <img src="assets/images/icons/profile/profile.png" alt="Me">
+    <div class="profileIntro">
+      <h2>Van Helsing</h2>
+      <a href="#">See Your Profile</a>
+    </div>
+  </div>
+  <div class="profileHeadBottom">
+    <button class="btnSwitch profileScores">24 Points</button>
+    <button class="btnSwitch btnRemove profileScores">12 Points</button>
+  </div>
+</div>
+
+
+<div class="profileBody">
+  <div class="sectionSeperator"> <div class="leftSeperator"></div><span>ME</span> <div class="rightSeperator"></div> </div>
+
+<section class="profileButtons">
+  <a href="/profileOptions/masseges.html">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/massege.png" alt="Masseges">
+    </div>
+    <p>Masseges</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull"id="targetFollowing"onclick="showModal()">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/following.png" alt="">
+    </div>
+    <p>Following</p>
+  </div>
+  </a>
+  <a href="/profileOptions/myImages.html">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/myImages.png" alt="">
+    </div>
+    <p>My Images</p>
+  </div>
+  </a>
+  <a href="/profileOptions/myVideos.html">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/myVideos.png" alt="">
+    </div>
+    <p>My Videos</p>
+  </div>
+  </a>
+  <a href="/profileOptions/album.html">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/albums.png" alt="">
+    </div>
+    <p>Albums</p>
+  </div>
+  </a>
+  <a href="/profileOptions/memories.html">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/memories.png" alt="">
+    </div>
+    <p>Memories</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/pages.png" alt="">
+    </div>
+    <p>Pages</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/savedPosts.png" alt="Masseges">
+    </div>
+    <p>Saved Posts</p>
+  </div>
+  </a>
+</section>
+
+
+<div class="sectionSeperator"> <div class="leftSeperator"></div><span>Community</span> <div class="rightSeperator"></div> </div>
+
+<section class="profileButtons">
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/community/explore.png" alt="">
+    </div>
+    <p>Explore</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/community/groups.png" alt="">
+    </div>
+    <p>Groups</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/community/forum.png" alt="">
+    </div>
+    <p>Forum</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/community/events.png" alt="">
+    </div>
+    <p>Events</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/community/marktetPlace.png" alt="">
+    </div>
+    <p>Marktet Place</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/community/myProducts.png" alt="">
+    </div>
+    <p>My Products</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/community/pokes.png" alt="">
+    </div>
+    <p>Pokes</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/community/blogs.png" alt="">
+    </div>
+    <p>Blogs</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/community/boosted.png" alt="">
+    </div>
+    <p>Boosted</p>
+  </div>
+  </a>
+</section>
+
+
+<div class="sectionSeperator"> <div class="leftSeperator"></div><span>Explore</span> <div class="rightSeperator"></div> </div>
+
+<section class="profileButtons">
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/explore/findFriends.png" alt="">
+    </div>
+    <p>Find Friends</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/explore/commonThings.png" alt="">
+    </div>
+    <p>Common Things</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/explore/popularPosts.png" alt="">
+    </div>
+    <p>Popular Posts</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/explore/offers.png" alt="">
+    </div>
+    <p>Offers</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/explore/jobs.png" alt="">
+    </div>
+    <p>Jobs</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/explore/movies.png" alt="">
+    </div>
+    <p>Movies</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/explore/funding.png" alt="">
+    </div>
+    <p>Funding</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/explore/games.png" alt="">
+    </div>
+    <p>Games</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/explore/coronaVirus.png" alt="">
+    </div>
+    <p>Corona Virus</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/explore/liveVideos.png" alt="">
+    </div>
+    <p>Live Videos</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/explore/advertising.png" alt="">
+    </div>
+    <p>Advertising</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/explore/bantooPro.png" alt="">
+    </div>
+    <p>Bantoo Pro</p>
+  </div>
+  </a>
+</section>
+
+
+
+
+
+<div class="sectionSeperator"> <div class="leftSeperator"></div><span>Services</span> <div class="rightSeperator"></div> </div>
+ <section class="profileButtons">
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/services/bantooTopUp.png" alt="">
+    </div>
+    <p>Bantoo TopUp</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/services/bantooBank.png" alt="">
+    </div>
+    <p>Bantoo Bank</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/services/bantooPay.png" alt="">
+    </div>
+    <p>Bantoo Pay</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/services/bantooPlay.png" alt="">
+    </div>
+    <p>Bantoo Play</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/services/bantooMusic.png" alt="">
+    </div>
+    <p>Bantoo Music</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/services/bantooFilm.png" alt="">
+    </div>
+    <p>Bantoo Films</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/services/bantooFood.png" alt="">
+    </div>
+    <p>Bantoo Food</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/services/bantooTaxi.png" alt="">
+    </div>
+    <p>Bantoo Taxi</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/services/bantooTravel.png" alt="">
+    </div>
+    <p>Bantoo Travel</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/services/bantooDoctor.png" alt="">
+    </div>
+    <p>Bantoo Doctor</p>
+  </div>
+  </a>
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/services/bantooFit.png" alt="">
+    </div>
+    <p>Bantoo Fit</p>
+  </div>
+  </a>
+  
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/services/bantooBet.png" alt="">
+    </div>
+    <p>Bantoo Bet</p>
+  </div>
+  </a>
+
+
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/services/bantooDesign.png" alt="">
+    </div>
+    <p>Bantoo Design</p>
+  </div>
+  </a>
+
+
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/services/bantooAssurance.png" alt="">
+    </div>
+    <p>Bantoo Assurance</p>
+  </div>
+  </a>
+
+
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/services/bantooTeamwork.png" alt="">
+    </div>
+    <p>Bantoo TeamWork</p>
+  </div>
+  </a>
+
+
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/services/bantooMeet.png" alt="">
+    </div>
+    <p>Bantoo Meet</p>
+  </div>
+  </a>
+
+
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/services/bantooGov.png" alt="">
+    </div>
+    <p>Bantoo Gov</p>
+  </div>
+  </a>
+
+
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/services/bantooChat.png" alt="">
+    </div>
+    <p>Bantoo Chat</p>
+  </div>
+  </a>
+
+
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/services/bantooAgri.png" alt="">
+    </div>
+    <p>Bantoo Agri</p>
+  </div>
+  </a>
+
+
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/services/bantooMarket.png" alt="">
+    </div>
+    <p>Bantoo Market</p>
+  </div>
+  </a>
+
+
+  <a href="#">
+  <div class="profileButtonFull">
+    <div class="profileButton">
+      <img src="assets/images/icons/profile/services/bantooJob.png" alt="">
+    </div>
+    <p>Bantoo Job</p>
+  </div>
+  </a>
+
+
+</section> 
+</div>
+  </section>
+
+
+  <section class="rightContent">
+    <div class="rightContentHeader">
+        <img src="assets/images/icons/messagesIconWithBg.png" alt="Messages">
+        <img src="assets/images/icons/notificationIconWithBg.png" alt="Notification">
+    </div>
+    
+    <div class="rightContentBody">
+        <div class="rightSuggestion">
+           <div class="leftRightSuggestion">
+              <img src="assets/images/icons/homeReightSectionIcons/rightContentIcon1.png" alt="">
+              <div class="rightSuggestionIntro">
+                <p class="rightSuggestionIntroName">Angelica Endrizzi</p>
+                <p class="rightSuggestionIntroDesc">
+                    When are you coming?
+                </p>
+              </div>
+           </div>
+           <div class="rightRightSuggestion">
+                <button class="btnFollow">Follow</button>
+           </div>
+        </div>
+        <div class="rightSuggestion">
+           <div class="leftRightSuggestion">
+              <img src="assets/images/icons/homeReightSectionIcons/rightContentIcon1.png" alt="">
+              <div class="rightSuggestionIntro">
+                <p class="rightSuggestionIntroName">Leo Bani</p>
+                <p class="rightSuggestionIntroDesc">
+                    I am fine
+                </p>
+              </div>
+           </div>
+           <div class="rightRightSuggestion">
+                <button class="btnFollowing">Following</button>
+           </div>
+        </div>
+        <div class="rightSuggestion">
+           <div class="leftRightSuggestion">
+              <img src="assets/images/icons/homeReightSectionIcons/ux.png" alt="UX">
+              <div class="rightSuggestionIntro">
+                <p class="rightSuggestionIntroName">UI/Ux Designer</p>
+                <p class="rightSuggestionIntroDesc">
+                    Cybermoth GmbH
+                </p>
+              </div>
+           </div>
+           <div class="rightRightSuggestion">
+              <p class="rightSuggestionIntroDesc">3s ago</p>  
+           </div>
+        </div>
+        <div class="rightSuggestion columnSuggestion">
+           <div class="leftRightSuggestion">
+              <img src="assets/images/icons/homeReightSectionIcons/celio.png" alt="celio">
+              <div class="rightSuggestionIntro">
+                <p class="rightSuggestionIntroName">Celio Buccho</p>
+                <p class="rightSuggestionIntroDesc descWithIcons">
+                  <span class="descIcons">
+                    <img src="assets/images/icons/homeReightSectionIcons/desc1.png" alt="Desc">
+                    <img src="assets/images/icons/homeReightSectionIcons/desc2.png" alt="Desc">
+                    <img src="assets/images/icons/homeReightSectionIcons/desc3.png" alt="Desc">
+                    <img src="assets/images/icons/homeReightSectionIcons/desc4.png" alt="Desc">
+                    <img src="assets/images/icons/homeReightSectionIcons/desc5.png" alt="Desc">
+                    <img src="assets/images/icons/homeReightSectionIcons/descLast.png" alt="Desc">
+                    <span class="descIconsProfileCount">3+</span>
+                  </span> <span class="descIconsDescription">cellio buccho and 10 others like</span>
+                </p>
+              </div>
+           </div>
+           <div class="rightRightSuggestion ">
+            <button class="btnSwitch">Switch Now</button>
+           </div>
+        </div>
+        <div class="rightSuggestion columnSuggestion">
+           <div class="leftRightSuggestion">
+              <img src="assets/images/icons/homeReightSectionIcons/amalia.png" alt="celio">
+              <div class="rightSuggestionIntro">
+                <p class="rightSuggestionIntroName">Amalia Ferrari</p>
+                <p class="rightSuggestionIntroDesc descWithIcons">
+                  <span class="descIcons">
+                    <img src="assets/images/icons/homeReightSectionIcons/desc1.png" alt="Desc">
+                    <img src="assets/images/icons/homeReightSectionIcons/desc2.png" alt="Desc">
+                    <img src="assets/images/icons/homeReightSectionIcons/desc3.png" alt="Desc">
+                    <img src="assets/images/icons/homeReightSectionIcons/desc4.png" alt="Desc">
+                    <img src="assets/images/icons/homeReightSectionIcons/desc5.png" alt="Desc">
+                    <img src="assets/images/icons/homeReightSectionIcons/descLast.png" alt="Desc">
+                    <span class="descIconsProfileCount">3+</span>
+                  </span> <span class="descIconsDescription">cellio buccho and 10 others like</span>
+                </p>
+              </div>
+           </div>
+           <div class="rightRightSuggestion ">
+            <button class="btnSwitch ">Like</button>
+            <button class="btnSwitch btnRemove ">Remove</button>
+           </div>
+        </div>
+    </div>
+      </section>
+
+
+      <div class="modal followingModal">
+        <div class="modalHeader">
+         
+            <i onclick="hideModal()"class="fa fa-angle-left"></i>
+        
+          <h2>
+            Following
+          </h2>
+        </div>
+
+
+        <div class="modalBody">
+                  <div class="rightSuggestion suggestionFollow" >
+           <div class="leftRightSuggestion">
+              <img src="assets/images/icons/homeReightSectionIcons/rightContentIcon1.png" alt="">
+              <div class="rightSuggestionIntro">
+                <p class="rightSuggestionIntroName">Angelica Endrizzi</p>
+                <p class="rightSuggestionIntroDesc">
+                    When are you coming?
+                </p>
+              </div>
+           </div>
+           <div class="rightRightSuggestion  ">
+                <button class="btnFollow">Follow</button>
+           </div>
+        </div>
+        <div class="rightSuggestion suggestionFollow">
+           <div class="leftRightSuggestion">
+              <img src="assets/images/icons/homeReightSectionIcons/rightContentIcon1.png" alt="">
+              <div class="rightSuggestionIntro">
+                <p class="rightSuggestionIntroName">Leo Bani</p>
+                <p class="rightSuggestionIntroDesc">
+                    I am fine
+                </p>
+              </div>
+           </div>
+           <div class="rightRightSuggestion">
+                <button class="btnFollowing">Following</button>
+           </div>
+        </div>
+                  <div class="rightSuggestion suggestionFollow" >
+           <div class="leftRightSuggestion">
+              <img src="assets/images/icons/homeReightSectionIcons/rightContentIcon1.png" alt="">
+              <div class="rightSuggestionIntro">
+                <p class="rightSuggestionIntroName">Angelica Endrizzi</p>
+                <p class="rightSuggestionIntroDesc">
+                    When are you coming?
+                </p>
+              </div>
+           </div>
+           <div class="rightRightSuggestion  ">
+                <button class="btnFollow">Follow</button>
+           </div>
+        </div>
+        <div class="rightSuggestion suggestionFollow">
+           <div class="leftRightSuggestion">
+              <img src="assets/images/icons/homeReightSectionIcons/rightContentIcon1.png" alt="">
+              <div class="rightSuggestionIntro">
+                <p class="rightSuggestionIntroName">Leo Bani</p>
+                <p class="rightSuggestionIntroDesc">
+                    I am fine
+                </p>
+              </div>
+           </div>
+           <div class="rightRightSuggestion">
+                <button class="btnFollowing">Following</button>
+           </div>
+        </div>
+                  <div class="rightSuggestion suggestionFollow" >
+           <div class="leftRightSuggestion">
+              <img src="assets/images/icons/homeReightSectionIcons/rightContentIcon1.png" alt="">
+              <div class="rightSuggestionIntro">
+                <p class="rightSuggestionIntroName">Angelica Endrizzi</p>
+                <p class="rightSuggestionIntroDesc">
+                    When are you coming?
+                </p>
+              </div>
+           </div>
+           <div class="rightRightSuggestion  ">
+                <button class="btnFollow">Follow</button>
+           </div>
+        </div>
+        <div class="rightSuggestion suggestionFollow">
+           <div class="leftRightSuggestion">
+              <img src="assets/images/icons/homeReightSectionIcons/rightContentIcon1.png" alt="">
+              <div class="rightSuggestionIntro">
+                <p class="rightSuggestionIntroName">Leo Bani</p>
+                <p class="rightSuggestionIntroDesc">
+                    I am fine
+                </p>
+              </div>
+           </div>
+           <div class="rightRightSuggestion">
+                <button class="btnFollowing">Following</button>
+           </div>
+        </div>
+                  <div class="rightSuggestion suggestionFollow" >
+           <div class="leftRightSuggestion">
+              <img src="assets/images/icons/homeReightSectionIcons/rightContentIcon1.png" alt="">
+              <div class="rightSuggestionIntro">
+                <p class="rightSuggestionIntroName">Angelica Endrizzi</p>
+                <p class="rightSuggestionIntroDesc">
+                    When are you coming?
+                </p>
+              </div>
+           </div>
+           <div class="rightRightSuggestion  ">
+                <button class="btnFollow">Follow</button>
+           </div>
+        </div>
+        <div class="rightSuggestion suggestionFollow">
+           <div class="leftRightSuggestion">
+              <img src="assets/images/icons/homeReightSectionIcons/rightContentIcon1.png" alt="">
+              <div class="rightSuggestionIntro">
+                <p class="rightSuggestionIntroName">Leo Bani</p>
+                <p class="rightSuggestionIntroDesc">
+                    I am fine
+                </p>
+              </div>
+           </div>
+           <div class="rightRightSuggestion">
+                <button class="btnFollowing">Following</button>
+           </div>
+        </div>
+                  <div class="rightSuggestion suggestionFollow" >
+           <div class="leftRightSuggestion">
+              <img src="assets/images/icons/homeReightSectionIcons/rightContentIcon1.png" alt="">
+              <div class="rightSuggestionIntro">
+                <p class="rightSuggestionIntroName">Angelica Endrizzi</p>
+                <p class="rightSuggestionIntroDesc">
+                    When are you coming?
+                </p>
+              </div>
+           </div>
+           <div class="rightRightSuggestion  ">
+                <button class="btnFollow">Follow</button>
+           </div>
+        </div>
+        <div class="rightSuggestion suggestionFollow">
+           <div class="leftRightSuggestion">
+              <img src="assets/images/icons/homeReightSectionIcons/rightContentIcon1.png" alt="">
+              <div class="rightSuggestionIntro">
+                <p class="rightSuggestionIntroName">Leo Bani</p>
+                <p class="rightSuggestionIntroDesc">
+                    I am fine
+                </p>
+              </div>
+           </div>
+           <div class="rightRightSuggestion">
+                <button class="btnFollowing">Following</button>
+           </div>
+        </div>
+        </div>
+      </div>
+ <script src="assets/js/script.js"></script>   
+ <script src="assets/js/darkMode.js"></script>   
+ <script>
+// get the modal element
+const modal = document.getElementsByClassName('modal');
+Array.from(modal).forEach((e)=>{
+    // display the modal
+    e.style.display = 'none';
+  })
+// function to show the modal
+function showModal() {
+  // add a class to the body to set the background color to blue
+  body.classList.add('modal-open');
+  Array.from(modal).forEach((e)=>{
+    // display the modal
+    e.style.display = 'block';
+  })
+}
+if(  body.classList.contains('modal-open')){
+  screenTop = 0;
+}
+// function to hide the modal
+function hideModal() {
+  // remove the class from the body to restore the background color
+  body.classList.remove('modal-open');
+  
+  // hide the modal
+  Array.from(modal).forEach((e)=>{
+    // display the modal
+    e.style.display = 'none';
+  })
+}
+
+ </script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+body{
+    grid-template-columns: 118px auto;
+}
+.darkMode .introTarget p{
+    color: 
+    #727272;
+}
+.darkMode .mobileChat {
+   background-color:#363636;
+}
+.massegeHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.massegeHeaderRight img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.massegeHeader p{
+    font-weight: 700;
+font-size: 36px;
+line-height: 34px;
+
+color: #FA9D1A;
+
+}
+.massegeHeader i{
+    color: #FA9D1A;
+    font-size: 50px;
+}
+
+
+
+.massegeBody{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}
+.rightSuggestion{
+    width: 360px;
+}
+.rightSuggestion:not(:first-child){
+    margin-top:9px;
+}
+
+.rightColumn h2{
+    font-weight: 700;
+font-size: 24px;
+line-height: 23px;
+
+color: #FA9D1A;
+text-align: center;
+}
+
+
+.rightColumnHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+.rightColumnHeader P{
+    font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 31px;
+margin-left: 5px;
+color: #000000;
+
+}
+.introTarget{
+    display: flex;
+    align-items: center;
+
+}
+.introTarget img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+
+.rightColumnBody{
+    max-height: 35vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.massege{
+    border-radius: 25px 0px 25px 25px;
+    width: max-content;
+    font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 19px;
+max-width: 310px;
+
+}
+.massege p{
+    padding: 13px 40px;
+}
+.send{
+    
+    color: #FA9D1A;
+    margin-left: auto;
+    background: #FEEBD1;
+
+}
+.recieve{
+    margin-right: auto;
+    background: #DCEFFBBF;
+    color: #35A6E5;
+
+}
+
+
+
+.leftColumn{
+    max-height: 78vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.rightColumn{
+    padding: 0 30px;
+}
+
+.rightColumnFooter{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+.rightColumnFooter input{
+    width: 87%;
+    border: none;
+    outline: none;
+    background: #FA9D1A;
+box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04);
+border-radius: 15px;
+padding: 17px;
+font-weight: 400;
+font-size: 24px;
+line-height: 23px;
+
+color: #FFFFFF;
+}
+.rightColumnFooter input::placeholder{
+    font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 23px;
+
+color: #FFFFFF;
+}
+
+.rightColumnFooter button{
+    background: #FA9D1A;
+box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04);
+border-radius: 15px;
+border: none;
+outline: none;
+padding: 12px 15px;
+margin-left: 9px;
+}
+
+
+.d-none{
+    display: none;
+}
+.mobileChat{
+    display: none;
+}
+
+
+@media screen and (max-width:850px){
+    .mobileChat{
+        display: block;
+    }
+    .d-none{
+        display: none !important;
+    }
+    .massegeBody{
+        display: block;
+    }
+    .rightColumn{
+        display: none;
+    }
+    .leftColumn{
+        position: relative;
+    }
+    .mobileChat {
+        display: block;
+        position: absolute;
+        top: 1px;
+        background: white;
+        width: -webkit-fill-available;
+        height: 100%;
+    }
+    .rightSuggestion{
+        width: 100%;
+    }
+    .rightSuggestionIntro{
+        margin-left: 1.5rem;
+    }
+    
+    .rightSuggestionIntroName, .rightSuggestion p {
+        font-size: 24px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .leftRightSuggestion img {
+        width: 90px;
+        height: 90px;
+    }
+    .rightSuggestionIntroDesc {
+        font-size: 24px;
+    }
+    .rightSuggestion:not(:first-child) {
+        margin-top: 1rem;
+    }
+    .mobileNav ul {
+        padding: 0px 3.5rem;
+    }
+    .leftColumn{
+        padding: 0 22px;
+    }
+    .mobileChat .fa-close{
+        position: absolute;
+        top: 19px;
+        font-size: 24px;
+        line-height: 23px;
+        color: #FA9D1A;
+    }
+}
+
+@media screen and (max-width:600px){
+    .leftRightSuggestion img {
+        width: 56px;
+        height: 56px;
+    }
+    .rightSuggestion{
+        width: auto;
+    }
+    .rightSuggestionIntroName, .rightSuggestion p {
+        font-size: 14px;
+        margin: 3px;
+    }
+  
+    .massegeHeader p {
+        font-size: 24px;
+    }
+    .massegeHeader i {
+        font-size: 32px;
+    }
+    .massegeHeaderRight img {
+        width: 38px;
+        height: 38px;
+    }
+    .introTarget img {
+        width: 56px;
+        height: 56px;
+    }
+    .rightColumnHeader P {
+        font-size: 16px;
+    }
+    .rightColumnHeader img{
+        width: 38px;
+        height: 38px;
+    }
+    .massege{
+        max-width: 186px;
+    }
+    .massege p{
+        font-size: 13px;
+        padding: 12px;
+    }
+    .leftColumn {
+        padding: 0;
+    }
+    .rightColumnFooter input,.rightColumnFooter input::placeholder  {
+        font-size: 13px;
+    }
+}

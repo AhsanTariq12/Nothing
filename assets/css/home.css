@@ -1,0 +1,458 @@
+
+.mobileNav {
+  display: none;
+}
+.whatsInMindMobile {
+  display: none;
+}
+.whatsInMindPc {
+  display: flex;
+}
+
+
+
+
+.toggleBar {
+  width: 90%;
+  height: 61px;
+  padding: 15px 10px;
+  margin: 20px auto;
+  background: #fa9d1a;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 40px;
+  display: flex;
+}
+.toggleBarBtn {
+  width: 100%;
+  height: 100%;
+
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 40px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 31px;
+  text-align: center;
+
+  color: #ffffff;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.fa-angle-down {
+  position: absolute;
+  right: 22px;
+}
+.toggleBarBtnSelected {
+  color: #fa9d1a;
+  background-color: white;
+}
+.toggleBtns {
+  width: 50%;
+  position: relative;
+}
+.toggleBarBtnSelected {
+  background: #ffffff;
+}
+/* FOR DROPDOWN */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 234px;
+}
+
+.dropdown-button:focus + .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 21px;
+
+  color: #727272;
+}
+.dropdown-menu li {
+  margin-bottom: 6px;
+}
+.dropdown-menu li a:hover {
+  background-color: #f5f5f5;
+}
+
+.selectorBar {
+  /* width: 762px; */
+  height: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 35px; */
+}
+.selectorBar img {
+  width: 33%;
+}
+
+.stories {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 12px;
+  padding: 15px 10px;
+  justify-content: center;
+}
+
+.story {
+  width: 138px;
+  height: 228.22px;
+  position: relative;
+
+  border-radius: 10px;
+}
+
+.storyTitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 13px;
+
+  color: #ffffff;
+  position: absolute;
+  top: 70%;
+  left: 6px;
+}
+.storyProfilePic {
+  position: absolute;
+  width: 37.62px;
+  height: 37.62px;
+  background: black;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  bottom: -15px;
+  left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.storyProfilePic img {
+  width: 18px;
+}
+
+.story1 {
+  background: url("../images/story1.png") no-repeat center/cover;
+}
+.story2 {
+  background: url("../images/story2.png") no-repeat center/cover;
+}
+.story3 {
+  background: url("../images/story3.png") no-repeat center/cover;
+}
+.story4 {
+  background: url("../images/story4.png") no-repeat center/cover;
+}
+.story5 {
+  background: url("../images/story5.png") no-repeat center/cover;
+}
+
+.whatsInMind {
+  margin: 20px auto;
+}
+
+.postsHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.postsHeader p:first-child {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 27px;
+  text-align: center;
+
+  color: #fa9d1a;
+}
+.postsHeader p:nth-child(2) {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 27px;
+  text-align: center;
+
+  color: #a8a8a8;
+}
+
+.postsBody {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+.post {
+  background: #ffffff;
+  box-shadow: 0px 10px 25px rgba(53, 166, 229, 0.4);
+  border-radius: 20px;
+  padding: 20px 33px;
+}
+
+.postHeader {
+  display: flex;
+  justify-content: space-between;
+  max-height: 200px;
+  align-items: center;
+}
+.postHeaderLeft {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+.postHeaderLeft img {
+  width: 102px;
+  height: 102px;
+  border-radius: 50%;
+}
+.postIntro {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+}
+.postName {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 31px;
+
+  color: #727272;
+  margin: 0;
+}
+.postLocation {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 23px;
+
+  color: #c2c2c4;
+  margin: 0;
+}
+
+.postHeaderRight {
+  display: flex;
+  gap: 2px;
+}
+.postHeaderRight .postHeadDot {
+  width: 12px;
+  height: 12px;
+  background-color: #979bb4;
+  border-radius: 50%;
+}
+
+.postContent p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 23px;
+
+  color: #c2c2c4;
+}
+
+
+.postFooter{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.leftFooter{
+    display: flex;
+    gap: 25px;
+}
+.likeIcon,.commentIcon{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    cursor: pointer;
+}
+.likeCount,.commentCount{
+    font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 11px;
+
+color: #C2C2C4;
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    display: block;
+    position: relative;
+    height: 100vh;
+  }
+  .whatsInMindMobile {
+    display: flex;
+    width: auto;
+    height: auto;
+  }
+  .whatsInMindPc {
+    display: none;
+  }
+ 
+  .mainContent {
+    margin: 0;
+    width: auto;
+    padding: 0px 20px;
+  }
+ 
+  .toggleBar {
+    width: auto;
+  }
+  .stories {
+    width: auto;
+  }
+  .story {
+    width: 160px;
+    height: 295px;
+  }
+
+  .mobileNav {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+z-index: 33;
+    background: url(../images/navMobileBg.png) no-repeat center/cover;
+  }
+  .mobileNav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mobileNav ul li {
+    list-style: none;
+  }
+
+
+  .storyProfilePic {
+    left: 37px;
+  }
+
+  .rightThreeLines .line {
+    background: #d1d1d1;
+    width: 30px;
+    height: 6px;
+}
+
+.leftThreeDots .dot{
+    width: 8px;
+    height: 8px;
+}
+.bell{
+    height: 50px;
+}
+}
+
+
+@media screen and (max-width:600px) {
+    .mainContent{
+        padding-bottom: 105px;
+     }
+    .mobileHeader img {
+        width: 73px;
+    } 
+    .downArrowBtn{
+        display: none !important;
+    }
+    .mobileHeader li img {
+        width: 38px;
+        height: 38px;
+    }
+    .toggleBar {
+        width: 90%;
+    }
+    .whatsInMindMobile img{
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+    }
+
+    .story {
+        min-width: 99px;
+        min-height: 182px;
+    }
+    .stories{
+        flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding-right: 0;
+    justify-content: start;
+    }
+    .toggleBarBtn {
+        font-size: 19px;
+    }
+  
+    .bell{
+        height: 32px;
+    }
+    .movieIcon{
+        width: 35px;
+    }
+    .cloudIcon{
+        width: 32px;
+    }
+    #homeMobile img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .postsHeader{
+        display: none;
+    }
+ 
+    .mobileNav ul{
+        padding: 0 8px;
+    }
+    .rightThreeLines .line {
+        background: #d1d1d1;
+        width: 20px;
+        height: 3px;
+    }
+    .leftThreeDots .dot{
+        width: 5px;
+        height: 5px;
+    }
+    .storyProfilePic{
+        width: 18px;
+        height: 18px;
+        left: 37px;
+    bottom: -6px;
+    }
+    .storyProfilePic img{
+        width: 12px;
+    }
+    .postName{
+        font-size: 18px;
+    }
+    .postLocation{
+        font-size: 14px;
+    }
+    .postHeaderRight .postHeadDot {
+        width: 6px;
+        height: 6px;
+    }
+    .postHeaderLeft img {
+        width: 50px;
+        height: 50px;
+    }
+    .postContent p {
+        font-size: 13px;
+    }
+}

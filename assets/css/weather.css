@@ -1,0 +1,261 @@
+.mainWeatherContent{
+    padding: 35px 60px;
+    
+background: #FFFFFF;
+box-shadow: 0px 10px 25px rgba(53, 166, 229, 0.4);
+border-radius: 30px;
+}
+
+.weatherContentHead{
+    display: flex;
+    justify-content: space-between;
+}
+.weatherContentHead p{
+    font-style: normal;
+font-weight: 700;
+font-style: normal;
+    font-weight: 700;
+    font-size: 140px;
+    margin: 0;
+    color: #727272;
+color: #727272;
+}
+.weatherContentHead p sup{
+    font-size: 74px;
+    font-weight: 100;
+    margin-left: -39px;
+    position: relative;
+    top: -35px;
+}
+
+
+
+
+
+.weatherContentBody p{
+    font-style: normal;
+font-weight: 700;
+font-size: 55px;
+line-height: 53px;
+text-align: center;
+color: #727272;
+margin: 0;
+
+}
+.weatherContentBody p:first-child{
+margin-bottom: 24px;
+
+}
+#weatherCond{
+    font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 46px;
+color: #727272;
+margin-top: 0;
+text-align: center;
+}
+
+.weatherContentFoot{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 29px;
+}
+.weatherDetail{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.weatherDetailBody p{
+    font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 46px;
+margin: 36px 0;
+color: #727272;
+}
+.weatherDetailBody sup{
+    position: relative;
+    top: -10px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 19px;
+    margin-top: -10px;
+    color: #727272;
+}
+
+.secondaryWeaterContent{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.weatherCard{
+    width: 121px;
+/* padding: 15px; */
+background: #FFFFFF;
+box-shadow: 0px 7px 20px rgba(53, 166, 229, 0.4);
+border-radius: 12px;
+height: 202px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+.weatherCard:not(:first-child){
+    margin-left: 10px;
+}
+
+
+.weatherCardHead{
+    font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 17px;
+
+color: #727272;
+}
+.weatherCardFoot{
+    font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 31px;
+
+color: #727272;
+}
+.weatherCardFoot sup{
+    font-weight: 500;
+font-size: 12px;
+position: relative;
+top: -10px;
+}
+
+.pcHide{
+    display: none;
+}
+
+.darkMode .mainWeatherContent{
+    background: transparent;
+}
+.darkMode .weatherCard{
+    background: transparent;
+}
+@media screen and (max-width: 850px) {
+.pcHide{
+    display: block;
+}
+.mainWeatherContent{
+
+    width: 50%;
+    margin: auto;
+}
+.weatherContentHead{
+    flex-direction: column;
+    align-items: center;
+}
+.weatherContentHead h2{
+    font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 40px;
+
+color: #727272;
+margin-top: 0;
+}
+
+.weatherContentHead p {
+ font-size: 100px;
+}
+.weatherContentHead p sup{
+    font-size: 20px;
+}
+.searchMobile {
+    display: none;
+  }
+
+  .weatherContentBody p {
+    font-size: 30px;
+    margin: 0;
+  }
+  #weatherCond,.weatherDetailBody p  {
+    font-size: 30px;
+    margin: 0;
+  }
+  .weatherDetailBody sup {
+font-size: 10px;  
+}
+.weatherDetailFoot{
+    font-style: normal;
+font-weight: 400;
+font-size: 33px;
+line-height: 32px;
+
+color: #727272;
+}
+.weatherCard{
+    width: 105px;
+    height: 230px;
+    
+}
+.weatherCardHead{
+    font-size: 18px;
+}
+.weatherCardFoot{
+    font-size: 22px;
+}
+.weatherCard:not(:first-child) {
+    margin-left: 7px ;
+}
+.mainWeatherContent {
+    padding: 27px 60px;
+}
+.weatherContentBody p:first-child {
+    margin: 0;
+}
+
+}
+@media screen and (max-width: 600px) {
+    .mainWeatherContent {
+        width: 70%;}
+
+        .weatherContentHead h2 {
+            font-size: 20px;
+        }
+        #weatherCond, .weatherDetailBody p {
+            font-size: 24px;
+        }
+        .weatherDetailFoot {
+font-size: 15px;
+        }
+        .weatherCardHead{
+            font-size: 8px;
+        }
+        .weatherCard img{
+            width: 23px;
+        }
+    
+        .weatherCard {
+            height: 105px;
+        }
+        .weatherCardFoot {
+            font-size: 14px;
+        }
+        .weatherCardFoot sup {
+            font-size: 6px;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

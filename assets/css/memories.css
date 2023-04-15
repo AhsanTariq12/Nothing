@@ -1,0 +1,228 @@
+@import url('https://fonts.cdnfonts.com/css/gotham');
+
+body{
+    margin: 0;
+    font-family: 'Gotham', sans-serif;
+  overflow-x: hidden;
+}
+.mainHeader{
+    background:
+    #F4F4F4; 
+box-shadow: 0px 10px 25px rgba(114, 114, 114, 0.4);
+padding: 24px 10px;
+display: flex;
+width: 100%;
+align-items: center;
+}
+.darkMode .mainHeader{
+    background-color: #282828;  
+}
+body.darkMode{
+    background-color: #282828;
+}
+
+.darkMode .mainHeader a{
+color: white;
+}
+.mainHeader h2{
+    margin-left: 7px;
+  
+}
+.mainHeader a{
+    font-size: 50px;
+}
+.imageTitle{
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+.darkMode .icon-container {
+    position: relative; /* make sure the container has position set */
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #ffffff30;
+  }
+  
+  .darkMode .icon-container img {
+    position: absolute; /* position the image within the container */
+    top: 50%; /* center vertically */
+    left: 50%; /* center horizontally */
+    transform: translate(-50%, -50%); /* center the image */
+    width: 38px;
+    height: 37px;
+  }
+  .darkMode .imageTitle h2  {
+    color: white;
+  }
+  
+
+  .mainBody{
+    padding: 20px 0;
+    padding-left: 40px;
+  }
+  .row{
+    display: flex;
+    align-items: center;
+    overflow-x: auto; 
+    overflow-y: hidden;
+}
+.row img{
+    object-fit: cover;
+}
+  .row1 img{
+    width: 202px;
+    height: 304px;
+filter: drop-shadow(0px 4px 25px rgba(53, 166, 229, 0.3));
+border-radius: 20px;
+  }
+  .row1 img:not(:first-child){
+    margin-left: 30px;
+
+  }
+
+.btnTitle{
+    padding: 10px 25px;
+
+border-radius: 30px;
+font-weight: 700;
+font-size: 20px;
+line-height: 19px;
+outline: none;
+border: none;
+margin: 18px 0;
+}
+  .btnPhoto{
+    background: rgba(53, 166, 229, 0.2);
+color: #35A6E5;
+  }
+  .btnVideos{
+    background: #FA9D1A66;
+
+color: 
+#FA9D1A
+  }
+  .row2 img{
+    width: 157px;
+    height: 156px;
+    border-radius: 20px;
+  }
+  .row2 .row2ImgCont:not(:first-child){
+    margin-left: 30px;
+  }
+
+  .row2ImgCont{
+    display: flex;
+    flex-direction: column;
+  }
+  .photoTitle{
+    font-weight: 700;
+font-size: 16px;
+line-height: 15px;
+margin-top: 8px;
+color: #4C5357;
+  }
+  .photoDesc{
+    font-weight: 400;
+font-size: 12px;
+line-height: 11px;
+margin-top: 3px;
+color: #9FAEB7;
+  }
+  .bigImg{
+    width: 738px !important;
+    height: 165px !important;
+  }
+  .row2{
+    align-items: flex-start;
+  }
+
+  @media screen and (max-width:850px){
+    .row1{
+        display: none;
+    }
+.row2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+
+}
+ .row2ImgCont:not(:first-child){
+margin-left: 0px !important;
+}
+    .icon-container{
+        display: none;
+    }
+    .mainHeader h2{
+        color: 
+        #FA9D1A;
+        font-size: 34px;
+    }
+    .mainHeader i{
+        color: 
+        #FA9D1A;
+        
+    }
+
+ 
+   .bigImgParent {
+        grid-column-start: auto;
+        grid-column-end: span 2;
+    }
+    .bigImg{
+        width: 100% !important;
+        height: 100% !important;
+        max-width: 90%;
+    }
+    .row2 img {
+        width: 300px;
+        height: 300px;
+  }
+  .row2 .photoTitle{
+    font-weight: 700;
+font-size: 30px;
+line-height: 34px;
+
+color: #4C5357;
+  }
+  .photoDesc{
+    font-size: 20px;
+  }
+  .row2ImgCont{
+    margin-bottom: 10px;
+  }
+  .btnTitle{
+    font-size: 30px;
+    padding: 20px 30px;
+  }
+}
+
+@media screen and (max-width:600px) {
+    .btnTitle {
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+    .row2 img {
+        height: 167px;
+        width: 157px;
+    }
+   .row2  .photoTitle{
+        font-size: 16px;
+        margin: 0;
+    }
+    .row2 .photoDesc{
+        font-size: 12px;
+        margin-top: 0px;
+    }
+    .mainHeader h2,.darkMode .mainHeader h2  {
+        font-size: 24px;
+    }
+    .mainHeader a {
+        font-size: 34px;
+    }
+}
+@media screen and (max-width:400px){
+    .mainBody {
+        padding-left: 13px;
+    }
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/weather.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+    <title>Home Page</title>
+</head>
+<body class="">
+  <header class="pcHeader">
+    <a href="/index.html" class="logo"><img src="assets/images/icons/ooLogo.png" alt="OO"></a>
+    <ul>
+        <li><a href="/index.html"><img src="assets/images/icons/Home.png" alt=""></a> </li>
+        <li><a href="#"><img src="assets/images/icons/video.png" alt=""></a> </li>
+        <li><a href="/weather.html"><img src="assets/images/icons/cloudSelected.png" alt=""></a> </li>
+        <li><a href="/profile.html"><img src="assets/images/icons/hamBurger.png" alt="options"></a> </li>
+
+        
+    </ul>
+  </header> 
+  <header class="mobileHeader">
+    <a href="#" class="logo"><img src="assets/images/icons/ooLogo.png" alt="OO"></a>
+    <ul>
+        <li><img src="assets/images/icons/searchWithBg.png" alt="search"></li>
+       
+        <li><a href="#"><img src="assets/images/icons/plusWithBg.png" alt="add"></a> </li>
+
+        
+    </ul>
+  </header> 
+
+  <nav class="mobileNav">
+    <ul>
+        <li><a href="#"><img class="bell"  src="assets/images/icons/notificationIcon.png" alt="bell"></a></li>
+        <li><a href="#"><img class="movieIcon" src="assets/images/icons/video.png" alt="video"></a></li>
+        <li id="homeMobile"><a href="/index.html"><img src="assets/images/icons/Home.png" alt=""></a></li>
+        <li><a href="/weather.html"><img class="cloudIcon" src="assets/images/icons/cloudSelected.png" alt="cloud"></a></li>
+        <li><a href="/profile.html"><img class="cloudIcon" src="assets/images/icons/hamBurger.png" alt="options"></a></li>
+    
+    </ul>
+
+  </nav>
+
+  <section class="mainBody">
+    <div class="searchBar searchMobile">
+        <i class="fa fa-search"></i> <input type="text"placeholder="Search">
+    </div>
+    <div class="mainWeatherContent">
+        <div class="weatherContentHead">
+          <h2 class="pcHide">Weather</h2>
+            <img src="assets/images/icons/rainingClouds.png" alt="raining">
+            <p>20 <sup>o</sup></p>
+        </div>
+
+        <div class="weatherContentBody">
+            <p>Punjab, Pakistan</p>
+            <p id="weatherCond">Rain</p>
+        </div>
+
+
+        <div class="weatherContentFoot">
+          <div class="weatherDetail">
+            <div class="weatherDetailHead"><img src="assets/images/icons/wind.png" alt="wind"> </div>
+            <div class="weatherDetailBody">  <p>3<sup>mph</sup></p> </div>
+            <div class="weatherDetailFoot">Wind</div>
+          </div>
+          <div class="weatherDetail">
+            <div class="weatherDetailHead"><img src="assets/images/icons/sun.png" alt="wind"> </div>
+            <div class="weatherDetailBody">  <p>2<sup>%</sup></p> </div>
+            <div class="weatherDetailFoot">Sun</div>
+          </div>
+          <div class="weatherDetail">
+            <div class="weatherDetailHead"><img src="assets/images/icons/humidity.png" alt="wind"> </div>
+            <div class="weatherDetailBody">  <p>30<sup>%</sup></p> </div>
+            <div class="weatherDetailFoot">Humidity</div>
+          </div>
+        </div>
+    </div>
+
+    <div class="secondaryWeaterContent">
+      <div class="weatherCard">
+        <div class="weatherCardHead">3:00 AM</div>
+        <div class="weatherCardBody"><img src="assets/images/icons/moon.png" alt=""> </div>
+        <div class="weatherCardFoot">8.6<sup>o</sup></div>
+      </div>
+      <div class="weatherCard">
+        <div class="weatherCardHead">7:00 AM</div>
+        <div class="weatherCardBody"><img src="assets/images/icons/moon.png" alt=""> </div>
+        <div class="weatherCardFoot">7.6<sup>o</sup></div>
+      </div>
+      <div class="weatherCard">
+        <div class="weatherCardHead">11:00 AM</div>
+        <div class="weatherCardBody"><img src="assets/images/icons/sun.png" alt=""> </div>
+        <div class="weatherCardFoot">20.1<sup>o</sup></div>
+      </div>
+      <div class="weatherCard">
+        <div class="weatherCardHead">3:00 PM</div>
+        <div class="weatherCardBody"><img src="assets/images/icons/sun.png" alt=""> </div>
+        <div class="weatherCardFoot">31.6<sup>o</sup></div>
+      </div>
+      <div class="weatherCard">
+        <div class="weatherCardHead">3:00 AM</div>
+        <div class="weatherCardBody"><img src="assets/images/icons/moon.png" alt=""> </div>
+        <div class="weatherCardFoot">8.6<sup>o</sup></div>
+      </div>
+      <div class="weatherCard">
+        <div class="weatherCardHead">3:00 AM</div>
+        <div class="weatherCardBody"><img src="assets/images/icons/moon.png" alt=""> </div>
+        <div class="weatherCardFoot">8.6<sup>o</sup></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="rightContent">
+    <div class="rightContentHeader">
+        <img src="assets/images/icons/messagesIconWithBg.png" alt="Messages">
+        <img src="assets/images/icons/notificationIconWithBg.png" alt="Notification">
+    </div>
+    
+    <div class="rightContentBody">
+        <div class="rightSuggestion">
+           <div class="leftRightSuggestion">
+              <img src="assets/images/icons/homeReightSectionIcons/rightContentIcon1.png" alt="">
+              <div class="rightSuggestionIntro">
+                <p class="rightSuggestionIntroName">Angelica Endrizzi</p>
+                <p class="rightSuggestionIntroDesc">
+                    When are you coming?
+                </p>
+              </div>
+           </div>
+           <div class="rightRightSuggestion">
+                <button class="btnFollow">Follow</button>
+           </div>
+        </div>
+        <div class="rightSuggestion">
+           <div class="leftRightSuggestion">
+              <img src="assets/images/icons/homeReightSectionIcons/rightContentIcon1.png" alt="">
+              <div class="rightSuggestionIntro">
+                <p class="rightSuggestionIntroName">Leo Bani</p>
+                <p class="rightSuggestionIntroDesc">
+                    I am fine
+                </p>
+              </div>
+           </div>
+           <div class="rightRightSuggestion">
+                <button class="btnFollowing">Following</button>
+           </div>
+        </div>
+        <div class="rightSuggestion">
+           <div class="leftRightSuggestion">
+              <img src="assets/images/icons/homeReightSectionIcons/ux.png" alt="UX">
+              <div class="rightSuggestionIntro">
+                <p class="rightSuggestionIntroName">UI/Ux Designer</p>
+                <p class="rightSuggestionIntroDesc">
+                    Cybermoth GmbH
+                </p>
+              </div>
+           </div>
+           <div class="rightRightSuggestion">
+              <p class="rightSuggestionIntroDesc">3s ago</p>  
+           </div>
+        </div>
+        <div class="rightSuggestion columnSuggestion">
+           <div class="leftRightSuggestion">
+              <img src="assets/images/icons/homeReightSectionIcons/celio.png" alt="celio">
+              <div class="rightSuggestionIntro">
+                <p class="rightSuggestionIntroName">Celio Buccho</p>
+                <p class="rightSuggestionIntroDesc descWithIcons">
+                  <span class="descIcons">
+                    <img src="assets/images/icons/homeReightSectionIcons/desc1.png" alt="Desc">
+                    <img src="assets/images/icons/homeReightSectionIcons/desc2.png" alt="Desc">
+                    <img src="assets/images/icons/homeReightSectionIcons/desc3.png" alt="Desc">
+                    <img src="assets/images/icons/homeReightSectionIcons/desc4.png" alt="Desc">
+                    <img src="assets/images/icons/homeReightSectionIcons/desc5.png" alt="Desc">
+                    <img src="assets/images/icons/homeReightSectionIcons/descLast.png" alt="Desc">
+                    <span class="descIconsProfileCount">3+</span>
+                  </span> <span class="descIconsDescription">cellio buccho and 10 others like</span>
+                </p>
+              </div>
+           </div>
+           <div class="rightRightSuggestion ">
+            <button class="btnSwitch">Switch Now</button>
+           </div>
+        </div>
+        <div class="rightSuggestion columnSuggestion">
+           <div class="leftRightSuggestion">
+              <img src="assets/images/icons/homeReightSectionIcons/amalia.png" alt="celio">
+              <div class="rightSuggestionIntro">
+                <p class="rightSuggestionIntroName">Amalia Ferrari</p>
+                <p class="rightSuggestionIntroDesc descWithIcons">
+                  <span class="descIcons">
+                    <img src="assets/images/icons/homeReightSectionIcons/desc1.png" alt="Desc">
+                    <img src="assets/images/icons/homeReightSectionIcons/desc2.png" alt="Desc">
+                    <img src="assets/images/icons/homeReightSectionIcons/desc3.png" alt="Desc">
+                    <img src="assets/images/icons/homeReightSectionIcons/desc4.png" alt="Desc">
+                    <img src="assets/images/icons/homeReightSectionIcons/desc5.png" alt="Desc">
+                    <img src="assets/images/icons/homeReightSectionIcons/descLast.png" alt="Desc">
+                    <span class="descIconsProfileCount">3+</span>
+                  </span> <span class="descIconsDescription">cellio buccho and 10 others like</span>
+                </p>
+              </div>
+           </div>
+           <div class="rightRightSuggestion ">
+            <button class="btnSwitch">Like</button>
+            <button class="btnSwitch btnRemove">Remove</button>
+           </div>
+        </div>
+    </div>
+      </section>
+
+ <script src="assets/js/script.js"></script>   
+ <script src="assets/js/darkMode.js"></script>   
+</body>
+</html>

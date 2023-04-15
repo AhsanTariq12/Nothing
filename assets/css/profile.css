@@ -1,0 +1,159 @@
+.darkMode .profileButton {
+    background: #C7C7C720;
+}
+.profileHeader{
+    padding: 10px 0px;
+}
+.profileHeadTop{
+    display: flex;
+}
+.profileHeadTop .profileIntro{
+    display: block;
+    height: min-content;
+    margin-left: 11px;
+
+}
+.profileHeadTop .profileIntro h2{
+    font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 48px;
+
+color: #727272;
+margin-bottom: 0.7rem;
+}
+.profileHeadTop .profileIntro a{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 31px;
+    
+    color: #C2C2C4;
+    text-decoration: none;
+}
+.profileHeadBottom{
+    display: flex;
+    justify-content: end;
+}
+
+
+.sectionSeperator{
+   
+
+    margin: 35px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftSeperator{
+    border: 2px solid #EFEFEF;
+    width: 49%;
+}
+.rightSeperator{
+    border: 2px solid #EFEFEF;
+    width: 49%;
+}
+.sectionSeperator span{
+    font-style: normal;
+font-weight: 500;
+font-size: 34px;
+line-height: 33px;
+
+color: #727272;
+}
+
+.profileBody{
+    overflow-y: scroll;
+    max-height: 666px;
+}
+.profileButtons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.profileButtons a{
+    text-decoration: none;
+}
+.profileButtonFull{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profileButtonFull p{
+    font-weight: 700;
+font-size: 26px;
+line-height: 25px;
+color: #727272;
+max-width: 222px;
+    text-align: center;
+}
+.profileButton{
+    width: 177px;
+    height: 177px;
+    background: 
+    #F4F4F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+.profileScores{
+    font-weight: 700;
+font-size: 32px;
+line-height: 31px;
+}
+@media screen and (max-width:850px){
+    .profileHeadTop img{
+        width: 186px;
+    }
+    .profileButtons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .profileButton{
+        width: 165px;
+        height: 165px;
+    }
+}
+
+@media screen and (max-width:720px){
+    .profileButtons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+ 
+}
+
+
+@media screen and (max-width:600px){
+    .profileHeadTop img{
+        width: 91px;
+        height: 90px;
+    }
+    .profileButtons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .profileHeadTop .profileIntro h2 {
+        font-size: 30px;
+        margin: 0 auto;
+    }
+    .profileHeadTop .profileIntro a {
+        font-size: 18px;
+    }
+ .profileScores{
+    font-weight: 500;
+font-size: 13px;
+ }
+ .profileButton img{
+    width: 45px;
+ }
+ .profileButton {
+    width: 93px;
+    height: 93px;
+ }
+ .profileButtonFull p {
+    font-size: 13px;
+ }
+ .sectionSeperator span {
+    font-size: 18px;
+ }
+}
